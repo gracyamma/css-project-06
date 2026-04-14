@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              orbitron: ["Orbitron", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="min-h-screen lg:overflow-hidden">
+      <!-- navbar -->
+      <nav class="bg-white h-20 px-10 xl:px-36 py-4 flex justify-between">
+        <img
+          class="w-[100px] lg:w-[150px] h-12 lg:h-20 py-2 ml-10 lg:ml-12"
+          src="./assets/logo.png  "
+          alt="img"
+        />
+        <div class="flex">
+          <ul class="md hidden hidden lg:flex flex items-center gap-7">
+            <li
+              class="font-orbitron font-bold text-xl underline cursor-pointer"
+            >
+              Home
+            </li>
+            <li class="font-orbitron font-semibold cursor-pointer">Male</li>
+            <li class="font-orbitron font-semibold cursor-pointer">Female</li>
+            <li class="font-orbitron font-semibold cursor-pointer">FAQ</li>
+            <li class="font-orbitron font-semibold cursor-pointer">About</li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-2">
+          <i
+            class="hidden lg:flex text-3xl fa-brands fa-sistrix"
+            style="color: rgb(8, 8, 8)"
+          ></i>
+          <button
+            class="border-2 border-black px-10 py-2 rounded-md tracking-wider text-lg font-poppins hidden lg:flex"
+          >
+            Search
+          </button>
+          <i
+            class="lg:hidden text-2xl fa-brands fa-github"
+            style="color: rgb(8, 8, 8)"
+          ></i>
+          <i class="lg:hidden fa-solid fa-bars" style="color: rgb(8, 8, 8)"></i>
+        </div>
+      </nav>
+
+      <!-- end of nav -->
+
+      <div>
+        <img
+          class="hidden lg:flex absolute top-[110px] left-[900px]"
+          src="./assets/globe.png"
+          alt="image"
+        />
+        <img
+          class="hidden lg:flex absolute top-40 right-[350px]"
+          src="./assets/star.png"
+          alt="image"
+        />
+      </div>
+
+      <!-- next section -->
+
+      <section
+        class="flex flex-col gap-10 lg:gap-24 items-center lg:flex-row justify-center lg:h-[700px]"
+      >
+        <!-- left div -->
+        <!-- <div class="relative">
+            <img class="hidden lg:flex h-[400px] relative z-10 top-40 " src="./assets/squares.png" alt="img">
+           
+          <img class="h-[400px] " src="./assets/Image.png" alt="img" />
+        </div> -->
+        <div class="h-[450px] w-[350px]">
+          <div class="relative">
+            <img
+              class="h-[460px] absolute z-50"
+              src="./assets/Image.png"
+              alt="img"
+            />
+            <img
+              class="hidden lg:flex h-[400px] absolute z-10 top-[130px] left-[65px]"
+              src="./assets/squares.png"
+              alt="img"
+            />
+          </div>
+        </div>
+
+        <!-- right div -->
+        <div class="flex flex-col gap-4 items-center">
+          <h1 class="text-4xl lg:text-5xl font-orbitron font-bold text-center">
+            What's Trend in 2026?
+          </h1>
+          <p
+            class="font-poppins text-slate-400 w-[400px] xl:w-[800px] text-center lg:text-xl"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.ipsum
+            inventore rerum adipisci cum! Nesciunt, id culpa? Deserunt labore
+            debits, voluptas guam vel harum aperiam? voluptatem, optio vero.
+          </p>
+          <div class="flex gap-4 mt-2 mb-flex flex-col lg:flex-row">
+            <input
+              type="email "
+              placeholder="Email Adress "
+              class="border-2 border-black rounded-xl text-center font-orbitron font-bold placeholder-slate-600"
+            />
+            <button
+              class="bg-black text-white lg:px-8 py-1 rounded-xl font-bold font-orbitron"
+            >
+              Join Now
+            </button>
+          </div>
+          <p class="font-poppins text-slate-400">Contact us</p>
+          <div class="flex gap-2 mt-4">
+            <img
+              class="cursor-pointer hover:bg-white"
+              src="./assets/Group.png"
+              alt="image"
+            />
+            <img
+              class="cursor-pointer hover:bg-white"
+              src="./assets/Group (1).png"
+              alt="image"
+            />
+            <img
+              class="cursor-pointer hover:bg-white"
+              src="./assets/Group (2).png"
+              alt="image"
+            />
+            <img
+              class="cursor-pointer hover:bg-white"
+              src="./assets/Group (3).png "
+              alt="image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+-
